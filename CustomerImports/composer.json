@@ -1,0 +1,31 @@
+{
+    "name": "nitesh/customer-imports",
+    "description": "Customer Imports via CSV & JSON",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Nitesh Kuyate",
+            "email": "nkuyate@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "~8.2.0 || ~8.3.0",
+        "magento/module-customer": "2.0.*",
+        "magento/module-customer-import-export": "2.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Nitesh\\CustomerImports\\": ""
+        }
+    }
+}
